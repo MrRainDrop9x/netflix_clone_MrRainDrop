@@ -1,0 +1,15 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    padding: 1rem;
+    z-index: 99;
+    transition: all 0.25s cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+.navLogo {
+    height: 3rem;
+    
+}

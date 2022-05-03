@@ -1,16 +1,17 @@
 import './App.css'
-import requests from './requests'
-import Row from './Row'
-import styles from './Row.module.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MainScreen from './screen/MainScreen'
+import Login from './screen/Login'
 function App() {
+  const user = null
   return (
     <div className='App'>
-      <Row
-        title='NETFLIX ORIGINALS'
-        fetchUrl={requests.fetchNetflixOriginals}
-      />
-      <Row title='Trending Now' fetchUrl={requests.fetchTrending} />
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path='/' element={<MainScreen />}></Route> */}
+          <Route path='/' element={<Login />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

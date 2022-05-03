@@ -1,0 +1,11 @@
+.loginScreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e521d6d-a53b-4c3f-a85f-dd77c06f7ac7/54cd5a62-8b2a-44f8-a55a-4c1a62028228/VN-en-20220425-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    
+    background-position: center center;
+    
+}

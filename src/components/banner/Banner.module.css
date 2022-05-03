@@ -1,0 +1,76 @@
+.banner {
+    color: white;
+    object-fit: contain;
+    height: 45rem;
+    margin-left: -1.5rem;
+}
+
+.bannerContents {
+    margin-left: 3rem;
+    padding-top: 14rem;
+    text-align: left;
+}
+
+.bannerTitle {
+    font-size: 3rem;
+   font-family: NetflixSansBold;
+    margin-bottom: 1rem;
+}
+.bannerButtons {
+    margin-top: 2rem;
+    
+}
+.bannerButton {
+    
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 30px;
+    margin: 0 20px 20px 0;
+    background-color: rgba(60, 61, 62, 0.5);
+    transition: background-color 0.2s;
+}
+.bannerButton:hover {
+    background-color: rgba(114, 117, 122, 0.5);
+}
+
+.bannerDescription {
+    width: 40rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+
+    overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  -ms-word-break: break-all;
+  word-break: break-all;
+ word-break: break-word;
+}
+
+.bannerFadeBottom {
+    width: 100%;
+    height: 14.45rem;
+    background-image: linear-gradient(transparent,rgba(37,37,37,.61),#111);
+}
+/* mobile */
+@media  screen and (max-width: 739px) {
+    .bannerDescription {
+        width: 80%;
+    }
+}
+
+/* Tablet width: >=740px  and < 1024px*/
+@media screen  and (min-width: 740px) and  (max-width : 1023px){
+    
+}
+
+/* PC >= 1024 */
+@media screen and (min-width: 1024px) {
+    
+}
