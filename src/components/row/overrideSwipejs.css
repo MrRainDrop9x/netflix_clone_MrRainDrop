@@ -1,0 +1,132 @@
+:root {
+    --colorOne: #141414;
+    --colorTwo: #5c5c5c;
+    --colorWhite: #e5e5e5;
+
+    --tileBorderRadius: 4px;
+
+    --fontOne: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 0 2%;
+}
+
+body {
+    font-family: var(--fontOne);
+    background-color: var(--colorOne);
+}
+
+.headerLogo {
+    width: 120px;
+}
+
+.thumbSection {
+    padding-top: 3%;
+    color: var(--colorWhite);
+}
+
+.thumbTitle {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 500;
+    margin: 0 4% 12px;
+}
+
+.thumbTiles.swiper-container {
+    
+}
+
+.thumbTile {
+    width: 20%;
+}
+
+.thumbTile__image {
+    width: 100%;
+    border-radius: var(--tileBorderRadius);
+}
+
+.thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+      /* bg-white right-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block */
+    
+    width: 4%;
+    transform: translateY(-50%);
+    top: 50%;
+    bottom: 0;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 9999px;
+    /* background-color: white;
+     border-radius: 9999px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+    overflow: hidden; */
+
+}
+
+.thumbTiles .swiper-button-prev {
+    left: 0;
+    /* border-top-right-radius: var(--tileBorderRadius);
+    border-bottom-right-radius: var(--tileBorderRadius); */
+}
+
+.thumbTiles .swiper-button-next {
+    right: 0;
+    /* border-top-left-radius: var(--tileBorderRadius);
+    border-bottom-left-radius: var(--tileBorderRadius); */
+}
+
+.thumbTiles .swiper-button-prev::after,
+.thumbTiles .swiper-button-next::after {
+    color: transparent;
+    font-size: 2.4rem;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+}
+.thumbTiles:hover .swiper-button-prev,.thumbTiles:hover .swiper-button-next{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.thumbTiles:hover .swiper-button-prev::after,.thumbTiles:hover .swiper-button-next::after {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 640px) {
+    .thumbTiles .swiper-button-prev::after,
+    .thumbTiles .swiper-button-next::after {
+        display: none;
+        
+    }
+
+    .thumbTiles .swiper-button-prev:hover::after,
+    .thumbTiles .swiper-button-next:hover::after {
+        
+    }
+
+    .thumbTiles:hover .swiper-button-prev::after,
+    .thumbTiles:hover .swiper-button-next::after {
+        display: block;
+    }
+
+}
+@media screen and (max-width : 1023px) {
+    .thumbTiles:hover .swiper-button-prev::after,
+    .thumbTiles:hover .swiper-button-next::after {
+        display: none;
+    }
+    .swiper-button-prev,.swiper-button-next {
+        display: none;
+    }
+    .thumbTiles.swiper-container {
+        padding: 0;
+    }
+}

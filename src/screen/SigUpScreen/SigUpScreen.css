@@ -1,0 +1,65 @@
+.sigupScreen {
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 40rem;
+    max-width: 50rem;
+    padding: 7rem;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.85);
+}
+.sigupScreen h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+.sigupScreen > form {
+    display: grid;
+    flex-direction: column;
+    outline: none;
+}
+
+.sigupScreen > form > input {
+    margin-bottom: 1.4rem;
+    height: 4rem;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.sigupScreen > form > button {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #e5091e;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.sigupScreen > form > h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.sigupScreen > form > h4 >span {
+    color: gray;
+    margin-right: 5px;
+}
+
+/* mobile */
+@media  screen and (min-width: 361px)  and (max-width: 739px) {
+   .sigupScreen {
+      width: 100%;
+      max-width: 32rem;
+      padding: 2rem;
+   }
+}
+
+@media  screen and (max-width: 360px) {
+    .sigupScreen {
+       width: 100%;
+       max-width: 32rem;
+       padding: 5rem;
+    }
+ }
