@@ -39,9 +39,7 @@ body {
     margin: 0 4% 12px;
 }
 
-.thumbTiles.swiper-container {
-    
-}
+
 
 .thumbTile {
     width: 20%;
@@ -104,19 +102,13 @@ body {
     .thumbTiles .swiper-button-prev::after,
     .thumbTiles .swiper-button-next::after {
         display: none;
-        
-    }
-
-    .thumbTiles .swiper-button-prev:hover::after,
-    .thumbTiles .swiper-button-next:hover::after {
-        
     }
 
     .thumbTiles:hover .swiper-button-prev::after,
     .thumbTiles:hover .swiper-button-next::after {
         display: block;
     }
-
+    
 }
 @media screen and (max-width : 1023px) {
     .thumbTiles:hover .swiper-button-prev::after,
