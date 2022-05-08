@@ -12,14 +12,16 @@ import 'swiper/css/navigation'
 import { Navigation } from 'swiper'
 // REACT-ICONS FONTAWEASOME
 import './overrideSwipejs.css'
-import { FaHeart, FaRegHeart } from 'react-icons/fa'
+import { FaRegHeart } from 'react-icons/fa'
 const base_url = 'https://image.tmdb.org/t/p/original/'
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([])
   const [trailerUrl, setTrailerUrl] = useState('')
   const [trailerCurrent, setTrailerCurrent] = useState('')
+
   useEffect(() => {
+    // eslint-disable-next-line
     async function fetchData() {
       const request = await axios.get(fetchUrl)
       setMovies(request.data.results)
