@@ -96,18 +96,21 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 <SwiperSlide key={movie.id}>
                   <div>
                     <img
-                      onClick={() => {
-                        if (trailerUrl && currentMovieName === trailerCurrent) {
-                          setTrailerUrl('')
-                        } else handleShow(currentMovieName)
-                      }}
+                      style={{ zIndex: '1000' }}
                       className={styles.row_poster}
                       src={`${base_url}${
                         isLargeRow ? movie.poster_path : movie.backdrop_path
                       }`}
                       alt={movie.original_title}
                     />
-                    <div className={styles.overlaySwiper}>
+                    <div
+                      className={styles.overlaySwiper}
+                      onClick={() => {
+                        if (trailerUrl && currentMovieName === trailerCurrent) {
+                          setTrailerUrl('')
+                        } else handleShow(currentMovieName)
+                      }}
+                    >
                       <p className={styles.titleOfFilm}>
                         {movie.title || movie.name}
                       </p>
