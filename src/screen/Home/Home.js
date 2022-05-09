@@ -35,7 +35,11 @@ export default function Home() {
                     <button className='loginScreen_getStart'>
                       <Link
                         to='browser'
-                        style={{ color: '#fff', textDecoration: 'none' }}
+                        style={{
+                          color: '#fff',
+                          textDecoration: 'none',
+                          padding: '1rem 2rem',
+                        }}
                       >
                         {' '}
                         Click me!

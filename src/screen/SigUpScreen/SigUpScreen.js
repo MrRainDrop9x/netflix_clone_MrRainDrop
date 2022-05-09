@@ -9,12 +9,19 @@ function SigInScreen() {
         <h1>Sign In</h1>
         <input placeholder='Email' type='email'></input>
         <input placeholder='Password' type='password'></input>
-        <button type='submit'>
-          <Link to='browser' style={{ color: '#fff', textDecoration: 'none' }}>
-            {' '}
-            Just click me!
-          </Link>
-        </button>
+
+        <Link
+          className='justClickMe'
+          to='browser'
+          style={{
+            color: '#fff',
+            textDecoration: 'none',
+          }}
+        >
+          {' '}
+          Just click me!
+        </Link>
+
         <h4>
           <span>New to Netflix?</span>
           Sign Up Now.
